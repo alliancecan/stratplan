@@ -1,0 +1,13 @@
+.hero{
+	.hero-image{
+		text-align: center;
+		img{
+			max-width: 100%;
+			height: auto;
+			@media screen and (max-width: $sm) {
+				max-width: 70%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

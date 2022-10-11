@@ -1,0 +1,25 @@
+.feature-image{
+	height:800px;
+	background-size:cover;
+	background-position:center center;
+	background-attachment: fixed;
+	position: relative;
+	.feature-signup{
+		position: absolute;
+		bottom: 30px;
+		width: 100%;
+		width: 1320px;
+		max-width: calc(100% - 36px);
+		background-color: rgba($yellow,.9);
+		.h5,p{
+			color: $gray;
+		}
+		@media screen and (max-width: $sm) {
+			bottom: 0;
+			max-width: 100%;
+		}
+	}
+	@media screen and (max-width: $sm) {
+		height: 625px;
+	}
+}

@@ -1,0 +1,56 @@
+.two_three_wysiwyg_split{
+	hr{
+		background-color: $yellow;
+		height: 2px;
+		opacity: 1;
+		margin-top: 36px;
+		&:first-of-type{
+			margin-top: 0;
+		}
+	}
+	h3, h1{
+		color: $dark-teal;
+		margin-top: 25px;
+	}
+	img.size-full{
+		width: 65px;
+	}
+	.col-lg-4{
+		@media screen and (min-width: 992px) {
+			align-self: flex-start;
+			position: sticky;
+			top: 0;
+		}
+	}
+	.no-sticky{
+		.col-lg-4{
+			position: relative !important;
+		}
+	}
+	.testimonial{
+		background-color: rgba($teal,.1);
+		background-image: url('./images/Triangles-2022-teal.png');
+		background-size: contain;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		.copy{
+			font-style: italic;
+			font-size: 20px;
+	
+		}
+		img.size-full{
+			width: auto;
+			@media screen and (max-width: 990px) {
+				height: 100%;
+			}
+			@media screen and (max-width: 767px) {
+				height: auto;
+				width: 100%;
+			}
+		}
+		@media screen and (max-width: 990px) {
+			background-image: none;
+			box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);
+		}
+	}
+}
