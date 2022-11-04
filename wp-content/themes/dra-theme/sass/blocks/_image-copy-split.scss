@@ -1,0 +1,16 @@
+
+.image-copy-split{
+	@media screen and (max-width: $sm) {
+		.image{
+			text-align: center;
+			img{
+				max-width: 140px;
+			}
+		}
+	}
+	&#image-copy-split-block_619c0d41f4e73{
+		img{
+			max-width: 240px;
+		}
+	}
+}

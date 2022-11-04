@@ -1,0 +1,218 @@
+.slider{
+	.slider-nav{
+		
+		.slick-track{
+			width: 100% !important;
+			transform: none !important;
+			display: flex;
+			justify-content: center;
+			.slick-slide{
+				cursor: pointer;
+				max-width: 150px !important;
+				padding: 0px 15px;
+			}
+			strong{
+				color: $brown;
+			}
+
+			.slick-current{
+
+				strong{
+					color: $blue;
+				}
+			}
+		}	
+	}
+	.slider-content{
+		// max-height: 700px;
+		.slick-list, .slick-track, .slick-slide{
+			// max-height: 700px;
+		}
+		.slider-content-copy{
+			background:$midbrown;
+			padding: 50px 100px;
+			position: absolute;
+			bottom: -10px;
+			opacity: 0;
+			left: 0;
+			width: 600px;
+			transition: all .75s;
+			transition-delay: .75s;
+			h4,p{
+				color: white;				
+			}
+			h4{
+				font-size: 2rem;
+			}
+		}
+		.slick-slide{
+			position: relative;
+		}
+		.slick-current{
+			.slider-content-copy{
+				opacity: 1;
+				bottom: 0;
+				padding: 75px 100px;
+			}
+		}
+		.slick-arrow{
+			position: absolute;
+			z-index: 2;
+			right: 50px;
+			bottom: 50px;
+			background: rgba($blue, .8);
+			border: none;	
+			text-indent: -9999px;
+			padding: 11px 30px;
+			&:after{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				content: "";
+				background-image: url("data:image/svg+xml,%3Csvg id='Isolation_Mode' data-name='Isolation Mode' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;%7D%3C/style%3E%3C/defs%3E%3Cpolyline class='cls-1' points='1.5 1.5 9.5 10.5 1.5 19.5'/%3E%3C/svg%3E");
+				
+				background-size: auto 24px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				
+			}
+		}
+		.slick-next{
+			border-radius: 0 25px 25px 0;
+		}
+		.slick-prev{
+			right: 113px;
+			
+			border-radius: 25px 0 0 25px;
+			&:after{
+				background-image: url("data:image/svg+xml,%3Csvg id='Text' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;%7D%3C/style%3E%3C/defs%3E%3Cpolyline class='cls-1' points='9.5 19.5 1.5 10.5 9.5 1.5'/%3E%3C/svg%3E");
+			}
+		}
+	}
+	.accordion{
+		.accordion-item{
+			border: none;
+			.accordion-button{
+				background: white;
+				box-shadow: none;
+				
+				strong{
+					color: $blue;
+				}
+				&:after{
+					background-image: url("data:image/svg+xml,%3Csvg id='Graphics' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 11'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%230f3157;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;%7D%3C/style%3E%3C/defs%3E%3Cpolyline class='cls-1' points='1.5 9.5 10.5 1.5 19.5 9.5'/%3E%3C/svg%3E");
+					background-position: center center;
+					transform: none !important;
+				}
+				&.collapsed{
+					strong{
+						color: $brown;
+					}
+					&:after{
+						background-image: url("data:image/svg+xml,%3Csvg id='Graphics' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 11'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23947856;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;%7D%3C/style%3E%3C/defs%3E%3Cpolyline class='cls-1' points='19.5 1.5 10.5 9.5 1.5 1.5'/%3E%3C/svg%3E");
+					}
+				}
+				
+			}
+			.accordion-body{
+				padding: 0;
+				.accordian-content-copy{
+					background:$midbrown;
+					padding: 50px 32px;
+													
+					h4,p{
+						color: white;				
+					}
+					h4{
+						font-size: 2rem;
+						@media screen and (max-width: $sm) {
+							font-style: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//Services slider unique
+#slider-block_61a692a4d9974{
+	.slider-nav{		
+		.slick-track{
+			.active{
+				display: none;
+			}
+			.slick-current{
+				.reg{
+					display: none;
+				}
+				.active{
+					display: block;
+				}
+			}
+		}
+	}
+	.accordion{
+		.accordion-item{
+			.accordion-button{
+				img{
+					margin-top: -25%;
+					width: 110px;
+					height: auto;
+				}
+				.active{
+					display: block;
+				}
+				.reg{
+					display: none;
+				}
+				&.collapsed{
+					.reg{
+						display: block;
+					}
+					.active{
+						display:none;
+					}
+				}
+			}
+		}
+	}
+}
+// People slider unique
+#slider-block_61a799dc5e7a5{
+	.slider-nav{		
+		.slick-track{
+			.slick-slide{
+				img{
+					border-radius: 60px ;
+					border: 3px solid transparent;
+				}
+			}
+			.slick-current{
+				img{
+					border-color: $blue;
+				}
+			}
+		}
+	}
+	.accordion{
+		.accordion-item{
+			.accordion-button{
+				padding-left: 32px;
+				padding-right: 32px;
+				img{
+					border-radius: 60px ;
+					width: 75px;
+					margin-right: 25px;					
+					border: 3px solid $blue;
+				}
+				&.collapsed{
+					img{
+						border-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
